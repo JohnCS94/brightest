@@ -1,0 +1,17 @@
+.ExistingUsagesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+  padding-top: 30px;
+}
+
+.DatePickerContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ResultsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+.ChartUnits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.NoData {
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  margin: 90px;
+}
