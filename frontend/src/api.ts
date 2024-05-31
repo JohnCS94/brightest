@@ -33,7 +33,6 @@ export const getUsages = async (data: any) => {
 };
 
 export const createNewUsage = async (data: any) => {
-  console.log(`${domain}usages/create/`);
   try {
     const response = await fetch(`${domain}usages/create/`, {
       method: "POST",
@@ -46,6 +45,7 @@ export const createNewUsage = async (data: any) => {
       throw new Error(`Network response not ok: ${response.statusText}`);
     }
     const responseData = await response.json();
+    toaster("New Usage Successfully Created", true);
     return responseData;
   } catch (error) {
     toaster(`Error when attempting to create new usage: ${error}`, false);

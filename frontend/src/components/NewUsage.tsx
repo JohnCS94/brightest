@@ -30,7 +30,6 @@ const NewUsage = () => {
         onSubmit={async (values) => {
           await createNewUsage(values)
             .then((data) => {
-              toaster("New Usage Successfully Created", true);
               refreshUsages();
             })
             .catch(() => toaster("Could not create a new usage", false));
