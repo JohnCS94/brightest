@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rd9#2ncrz-yhe0vtx&nb!f8)h_miaxluk+wj&^!!jpnz9!3uac
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://brightest-ten.vercel.app']
+ALLOWED_HOSTS = ['brightest-ten.vercel.app']
 
 
 # Application definition
