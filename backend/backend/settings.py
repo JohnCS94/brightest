@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rd9#2ncrz-yhe0vtx&nb!f8)h_miaxluk+wj&^!!jpnz9!3uac
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://brightest-ten.vercel.app']
 
 
 # Application definition
@@ -58,7 +58,6 @@ CORS_ALLOWED_ORIGINS = [
      'http://localhost:3000',
      'http://127.0.0.1:3000',
      'https://brightest-qxb7.vercel.app',
-     'https://brightest-ten.vercel.app'
 ]
 
 ROOT_URLCONF = 'backend.urls'
