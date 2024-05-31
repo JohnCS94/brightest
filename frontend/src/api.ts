@@ -1,5 +1,7 @@
 const domain = process.env.REACT_APP_API_URL || "http://localhost:8000/";
 
+console.log(domain);
+
 export const getUsages = async (data: any) => {
   try {
     const url = new URL(`${domain}usages`);
@@ -14,8 +16,6 @@ export const getUsages = async (data: any) => {
     );
 
     const response = await fetch(url.toString());
-
-    console.log(response);
 
     if (!response.ok) {
       throw new Error(`Network response not ok: ${response.statusText}`);
