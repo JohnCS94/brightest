@@ -20,11 +20,11 @@ export const convertQuantity = (
 export const toaster = (message: string, success: boolean) => {
   if (success) {
     toast(message, {
-      theme: "dark",
+      theme: "light",
     });
   } else {
     toast.error(message, {
-      theme: "dark",
+      theme: "light",
     });
   }
 };
