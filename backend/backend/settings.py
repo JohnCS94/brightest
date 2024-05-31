@@ -57,6 +57,7 @@ CORS_ALLOWED_ORIGINS = [
      'http://localhost:3000',
      'http://127.0.0.1:3000',
      'https://brightest-qxb7.vercel.app',
+     'https://brightest-qxb7-7cn8st0oh-john-scipions-projects.vercel.app/'
 ]
 
 ROOT_URLCONF = 'backend.urls'
