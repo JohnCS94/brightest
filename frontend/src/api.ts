@@ -33,6 +33,7 @@ export const getUsages = async (data: any) => {
 };
 
 export const createNewUsage = async (data: any) => {
+  console.log(`${domain}usages/create/`);
   try {
     const response = await fetch(`${domain}usages/create/`, {
       method: "POST",
