@@ -13,7 +13,13 @@ export const getUsages = async (data: any) => {
       url.searchParams.append(key, params[key])
     );
 
-    const response = await fetch(url.toString());
+    const response = await fetch(url.toString(), {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      mode: "cors",
+    });
 
     if (!response.ok) {
       throw new Error(`Network response not ok: ${response.statusText}`);
@@ -32,6 +38,7 @@ export const createNewUsage = async (data: any) => {
       headers: {
         "Content-Type": "application/json",
       },
+      mode: "cors",
       body: JSON.stringify(data),
     });
     if (!response.ok) {
