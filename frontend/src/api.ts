@@ -30,7 +30,7 @@ export const getUsages = async (data: any) => {
 
 export const createNewUsage = async (data: any) => {
   try {
-    const response = await fetch(`${domain}/create/`, {
+    const response = await fetch(`${domain}create/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
