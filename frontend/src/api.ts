@@ -1,3 +1,5 @@
+import { toaster } from "./utils";
+
 const domain = process.env.REACT_APP_API_URL || "http://localhost:8000/";
 
 export const getUsages = async (data: any) => {
@@ -26,13 +28,13 @@ export const getUsages = async (data: any) => {
     const responseData = await response.json();
     return responseData;
   } catch (error) {
-    console.error(`Error when attempting to get usages: ${error}`);
+    toaster(`Error when attempting to get usages: ${error}`, false);
   }
 };
 
 export const createNewUsage = async (data: any) => {
   try {
-    const response = await fetch(`${domain}create/`, {
+    const response = await fetch(`${domain}usages/create/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,6 +47,6 @@ export const createNewUsage = async (data: any) => {
     const responseData = await response.json();
     return responseData;
   } catch (error) {
-    console.error(`Error when attempting to create new usage: ${error}`);
+    toaster(`Error when attempting to create new usage: ${error}`, false);
   }
 };
