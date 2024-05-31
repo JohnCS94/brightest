@@ -18,7 +18,6 @@ export const getUsages = async (data: any) => {
       headers: {
         "Content-Type": "application/json",
       },
-      mode: "no-cors",
     });
 
     if (!response.ok) {
@@ -38,7 +37,6 @@ export const createNewUsage = async (data: any) => {
       headers: {
         "Content-Type": "application/json",
       },
-      mode: "no-cors",
       body: JSON.stringify(data),
     });
     if (!response.ok) {
