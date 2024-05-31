@@ -1,4 +1,4 @@
-const domain = "http://localhost:8000/";
+const domain = process.env.REACT_APP_API_URL || "http://localhost:8000/";
 
 export const getUsages = async (data: any) => {
   try {
