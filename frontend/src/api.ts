@@ -15,19 +15,22 @@ export const getUsages = async (data: any) => {
 
     const response = await fetch(url.toString());
 
+    console.log(response);
+
     if (!response.ok) {
       throw new Error(`Network response not ok: ${response.statusText}`);
     }
     const responseData = await response.json();
+    console.log(responseData);
     return responseData;
   } catch (error) {
-    console.error(`Error when attempting to create new usage: ${error}`);
+    console.error(`Error when attempting to get usages: ${error}`);
   }
 };
 
 export const createNewUsage = async (data: any) => {
   try {
-    const response = await fetch(`${domain}usages/create/`, {
+    const response = await fetch(`${domain}/create/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
